@@ -98,7 +98,7 @@
 }
 
 .nodo.seleccionado {
-    background-color: #0B4F8A;
+    background-color: #0B4F8A !important;
     color: #FFFFFF;
 
     border-color: #0B4F8A;
