@@ -1,0 +1,300 @@
+/* ==========================================
+   IMPRIMIR.CSS
+   Estilos para impresión y exportación PDF
+========================================== */
+
+@media print {
+
+    /* ==========================================
+       CONFIGURACIÓN GENERAL
+    ========================================== */
+
+    @page {
+        size: A4 portrait;
+        margin: 1.5cm;
+    }
+
+    html,
+    body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* ==========================================
+       ELEMENTOS QUE NO SE IMPRIMEN
+    ========================================== */
+
+    .sidebar,
+    .toolbar,
+    .btn-menu,
+    .btn-top,
+    .modal-overlay,
+    .footer,
+    #btnBuscar,
+    #btnExpandirTodo,
+    #btnContraerTodo,
+    #btnVistaArbol,
+    #btnVistaGrafica,
+    #btnExportarPDF,
+    #btnImprimir,
+    .toggle {
+        display: none !important;
+    }
+
+    /* ==========================================
+       HEADER
+    ========================================== */
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 0 15px 0;
+        margin-bottom: 20px;
+
+        border-bottom: 2px solid #0B4F8A;
+
+        background: #FFFFFF !important;
+        color: #000000 !important;
+    }
+
+    .header-logo img {
+        max-width: 70px;
+        margin-right: 15px;
+    }
+
+    .header-info h1 {
+        font-size: 20pt;
+        margin-bottom: 5px;
+    }
+
+    .header-info h2,
+    .header-info span {
+        color: #444444 !important;
+    }
+
+    /* ==========================================
+       ESTRUCTURA PRINCIPAL
+    ========================================== */
+
+    .contenedor {
+        display: block;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 0;
+    }
+
+    .organigrama-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        min-height: auto;
+    }
+
+    /* ==========================================
+       MENSAJE INICIAL
+    ========================================== */
+
+    .mensaje-inicial {
+        display: none !important;
+    }
+
+    /* ==========================================
+       ÁRBOL
+    ========================================== */
+
+    .organigrama-arbol {
+        overflow: visible !important;
+    }
+
+    .organigrama-arbol ul {
+        margin-left: 20px;
+    }
+
+    .nodo {
+        border: 1px solid #999999 !important;
+        background: #FFFFFF !important;
+        color: #000000 !important;
+
+        page-break-inside: avoid;
+        break-inside: avoid;
+
+        margin: 4px 0;
+    }
+
+    .nodo i {
+        color: #000000 !important;
+    }
+
+    .nodo.seleccionado {
+        border: 2px solid #000000 !important;
+    }
+
+    /* ==========================================
+       VISTA GRÁFICA
+    ========================================== */
+
+    .organigrama-grafico {
+        overflow: visible !important;
+    }
+
+    .grafico-hijos {
+        flex-wrap: wrap;
+    }
+
+    .grafico-card {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+
+        border: 1px solid #999999 !important;
+
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .grafico-card i {
+        color: #000000 !important;
+    }
+
+    .grafico-card.seleccionado {
+        border: 2px solid #000000 !important;
+    }
+
+    /* ==========================================
+       PANEL INSTITUCIONAL
+    ========================================== */
+
+    .panel-info {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+
+        border: none;
+        margin-top: 25px;
+
+        page-break-before: always;
+    }
+
+    .panel-header {
+        background: none !important;
+        color: #000000 !important;
+
+        border-bottom: 2px solid #000000;
+
+        padding: 0 0 10px 0;
+    }
+
+    .panel-header h3 {
+        font-size: 16pt;
+    }
+
+    #detalleDependencia {
+        padding: 0;
+    }
+
+    .detalle-card {
+        border: none;
+        box-shadow: none;
+    }
+
+    .detalle-top {
+        background: none !important;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .detalle-top img,
+    .detalle-top .sin-foto {
+        width: 90px;
+        height: 90px;
+
+        border: 1px solid #CCCCCC;
+    }
+
+    .detalle-top h2,
+    .detalle-top h4,
+    .detalle-top span {
+        color: #000000 !important;
+    }
+
+    .detalle-seccion {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* ==========================================
+       CONTACTOS
+    ========================================== */
+
+    .contacto-item i {
+        border: 1px solid #666666;
+        background: none !important;
+        color: #000000 !important;
+    }
+
+    .contacto-item a {
+        color: #000000 !important;
+        text-decoration: none;
+    }
+
+    /* ==========================================
+       ENLACES
+    ========================================== */
+
+    a {
+        color: #000000 !important;
+        text-decoration: underline;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+    }
+
+    /* ==========================================
+       SALTOS DE PÁGINA
+    ========================================== */
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        page-break-after: avoid;
+    }
+
+    ul,
+    li,
+    p {
+        page-break-inside: avoid;
+    }
+
+    /* ==========================================
+       FECHA DE IMPRESIÓN
+    ========================================== */
+
+    body::after {
+        content: "Atlas Organizacional Interactivo - Municipalidad de San Fernando del Valle de Catamarca - Impreso el "
+                 counter(page);
+
+        display: block;
+
+        margin-top: 30px;
+
+        text-align: center;
+
+        font-size: 9pt;
+
+        color: #666666;
+    }
+}

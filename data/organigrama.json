@@ -1,0 +1,1270 @@
+[
+  {
+    "id": "intendencia",
+    "nombre": "Intendencia",
+    "tipo": "intendencia",
+    "padre": null,
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "instituto-municipal-de-emprendedores",
+    "nombre": "Instituto Municipal de Emprendedores",
+    "tipo": "direccion",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "caja-de-credito-municipal",
+    "nombre": "Caja de Crédito Municipal",
+    "tipo": "direccion",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "secretaria-privada",
+    "nombre": "Secretaría Privada",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "ceremonial-y-protocolo",
+    "nombre": "Ceremonial y Protocolo",
+    "tipo": "administracion",
+    "padre": "secretaria-privada",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "fiscalia-municipal",
+    "nombre": "Fiscalía Municipal",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "asuntos-juridicos-fiscalia",
+    "nombre": "Asuntos Jurídicos",
+    "tipo": "direccion",
+    "padre": "fiscalia-municipal",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "sub-direccion-de-asuntos-juridicos",
+    "nombre": "Sub Dirección de Asuntos Jurídicos",
+    "tipo": "administracion",
+    "padre": "asuntos-juridicos-fiscalia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "escribania-municipal",
+    "nombre": "Escribanía Municipal",
+    "tipo": "direccion",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "secretaria-gobierno-coordinacion",
+    "nombre": "Secretaría de Gobierno y Coordinación",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "subsecretaria-deporte-y-juventud",
+    "nombre": "Deporte y Juventud",
+    "tipo": "subsecretaria",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "dg-deporte-federado-alto-rendimiento-y-capacitacion",
+    "nombre": "Deporte Federado, Alto Rendimiento y Capacitación",
+    "tipo": "direccion_general",
+    "padre": "subsecretaria-deporte-y-juventud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "direccion-deporte-social-y-amateur",
+    "nombre": "Deporte Social y Amateur",
+    "tipo": "direccion",
+    "padre": "dg-deporte-federado-alto-rendimiento-y-capacitacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "dg-politicas-juveniles",
+    "nombre": "Políticas Juveniles",
+    "tipo": "direccion_general",
+    "padre": "subsecretaria-deporte-y-juventud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-politicas-estudiantiles",
+    "nombre": "Políticas Estudiantiles",
+    "tipo": "administracion",
+    "padre": "dg-politicas-juveniles",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "dg-participacion-ciudadana",
+    "nombre": "Participación Ciudadana",
+    "tipo": "direccion_general",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "direccion-presupuesto-participativo-y-gestion-ciudadana",
+    "nombre": "Presupuesto Participativo y Gestión Ciudadana",
+    "tipo": "direccion",
+    "padre": "dg-participacion-ciudadana",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "direccion-centros-vecinales-sepaves-y-asociaciones-civiles",
+    "nombre": "Centros Vecinales, SEPAVES y Asociaciones Civiles",
+    "tipo": "direccion",
+    "padre": "dg-participacion-ciudadana",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-desarrollo-organizacional",
+    "nombre": "Desarrollo Organizacional",
+    "tipo": "administracion",
+    "padre": "direccion-centros-vecinales-sepaves-y-asociaciones-civiles",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "dg-recursos-humanos",
+    "nombre": "Recursos Humanos",
+    "tipo": "direccion_general",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "direccion-coordinacion",
+    "nombre": "Coordinación",
+    "tipo": "direccion",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-coordinacion-administrativa",
+    "nombre": "Coordinación Administrativa",
+    "tipo": "administracion",
+    "padre": "direccion-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "direccion-articulacion-territorial",
+    "nombre": "Articulación Territorial",
+    "tipo": "direccion",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-atencion-al-vecino",
+    "nombre": "Atención al Vecino",
+    "tipo": "administracion",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-derechos-humanos",
+    "nombre": "Derechos Humanos",
+    "tipo": "administracion",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-consejos-multisectoriales",
+    "nombre": "Consejos Multisectoriales",
+    "tipo": "administracion",
+    "padre": "secretaria-gobierno-coordinacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gabinete-y-modernizacion",
+    "nombre": "Gabinete y Modernización",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "prensa",
+    "nombre": "Prensa",
+    "tipo": "direccion_general",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "radio-municipal",
+    "nombre": "Radio Municipal",
+    "tipo": "administracion",
+    "padre": "prensa",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "comunicacion-y-contenidos",
+    "nombre": "Comunicación y Contenidos",
+    "tipo": "direccion_general",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "comunicacion-territorial",
+    "nombre": "Comunicación Territorial",
+    "tipo": "administracion",
+    "padre": "comunicacion-y-contenidos",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "legal-tecnica-y-despacho",
+    "nombre": "Legal, Técnica y Despacho",
+    "tipo": "direccion_general",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "asuntos-juridicos-gabinete",
+    "nombre": "Asuntos Jurídicos",
+    "tipo": "direccion",
+    "padre": "legal-tecnica-y-despacho",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "planificacion-estrategica-y-gobierno-abierto",
+    "nombre": "Planificación Estratégica y Gobierno Abierto",
+    "tipo": "direccion_general",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "estadistica-y-datos-abiertos",
+    "nombre": "Estadística y Datos Abiertos",
+    "tipo": "administracion",
+    "padre": "planificacion-estrategica-y-gobierno-abierto",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "transformacion-y-gestion-publica",
+    "nombre": "Transformación y Gestión Pública",
+    "tipo": "subsecretaria",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "modernizacion-e-innovacion",
+    "nombre": "Modernización e Innovación",
+    "tipo": "direccion_general",
+    "padre": "transformacion-y-gestion-publica",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "infraestructura-tecnologica",
+    "nombre": "Infraestructura Tecnológica",
+    "tipo": "direccion",
+    "padre": "modernizacion-e-innovacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "sistemas-e-innovacion-publica",
+    "nombre": "Sistemas e Innovación Pública",
+    "tipo": "direccion",
+    "padre": "modernizacion-e-innovacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "desarrollo-de-software",
+    "nombre": "Desarrollo de Software",
+    "tipo": "administracion",
+    "padre": "sistemas-e-innovacion-publica",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "optimizacion-administrativa",
+    "nombre": "Optimización Administrativa",
+    "tipo": "direccion",
+    "padre": "transformacion-y-gestion-publica",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "simplificacion-administrativa",
+    "nombre": "Simplificación Administrativa",
+    "tipo": "administracion",
+    "padre": "optimizacion-administrativa",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-de-procesos",
+    "nombre": "Gestión de Procesos",
+    "tipo": "administracion",
+    "padre": "optimizacion-administrativa",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "nodo-tecnologico",
+    "nombre": "Nodo Tecnológico",
+    "tipo": "direccion",
+    "padre": "transformacion-y-gestion-publica",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "laboratorio-e-innovacion",
+    "nombre": "Laboratorio e Innovación",
+    "tipo": "administracion",
+    "padre": "nodo-tecnologico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "desarrollo-social",
+    "nombre": "Desarrollo Social",
+    "tipo": "subsecretaria",
+    "padre": "gabinete-y-modernizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "accion-social-directa",
+    "nombre": "Acción Social Directa",
+    "tipo": "direccion",
+    "padre": "desarrollo-social",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "economia-social",
+    "nombre": "Economía Social",
+    "tipo": "direccion",
+    "padre": "desarrollo-social",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "feria-permanente-del-parque-adan-quiroga",
+    "nombre": "Feria Permanente del Parque Adán Quiroga",
+    "tipo": "administracion",
+    "padre": "economia-social",
+    "mision": "",
+    "funciones": []
+  },
+
+  {
+    "id": "hacienda",
+    "nombre": "Hacienda",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "despacho-hacienda",
+    "nombre": "Despacho",
+    "tipo": "administracion",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "contaduria",
+    "nombre": "Contaduría",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "contrataciones-de-obras-y-servicios-publicos",
+    "nombre": "Contrataciones de Obras y Servicios Públicos",
+    "tipo": "direccion",
+    "padre": "contaduria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "compras-y-contrataciones",
+    "nombre": "Compras y Contrataciones",
+    "tipo": "direccion",
+    "padre": "contaduria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "patrimonio",
+    "nombre": "Patrimonio",
+    "tipo": "administracion",
+    "padre": "compras-y-contrataciones",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-de-compras",
+    "nombre": "Gestión de Compras",
+    "tipo": "administracion",
+    "padre": "compras-y-contrataciones",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "auditoria-de-gestion",
+    "nombre": "Auditoría de Gestión",
+    "tipo": "direccion",
+    "padre": "contaduria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "liquidacion-de-haberes",
+    "nombre": "Liquidación de Haberes",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "programas-de-inclusion",
+    "nombre": "Programas de Inclusión",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "presupuesto-y-programacion-financiera",
+    "nombre": "Presupuesto y Programación Financiera",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "rentas",
+    "nombre": "Rentas",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "recaudacion",
+    "nombre": "Recaudación",
+    "tipo": "direccion",
+    "padre": "rentas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "fiscalizacion",
+    "nombre": "Fiscalización",
+    "tipo": "direccion",
+    "padre": "rentas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "tesoreria",
+    "nombre": "Tesorería",
+    "tipo": "direccion_general",
+    "padre": "hacienda",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-financiera",
+    "nombre": "Administración Financiera",
+    "tipo": "administracion",
+    "padre": "tesoreria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "salud",
+    "nombre": "Salud",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "salud-dg",
+    "nombre": "Salud",
+    "tipo": "direccion_general",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "programas-preventivos-y-abordajes-comunitarios",
+    "nombre": "Programas Preventivos y Abordajes Comunitarios",
+    "tipo": "administracion",
+    "padre": "salud-dg",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "salud-mental-y-bienestar-comunitario",
+    "nombre": "Salud Mental y Bienestar Comunitario",
+    "tipo": "direccion_general",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "abordaje-integral-de-salud-mental",
+    "nombre": "Abordaje Integral de Salud Mental",
+    "tipo": "administracion",
+    "padre": "salud-mental-y-bienestar-comunitario",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "centro-de-diagnostico-municipal",
+    "nombre": "Centro de Diagnóstico Municipal",
+    "tipo": "administracion",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "centro-de-castracion-y-control-poblacional-de-fauna-urbana",
+    "nombre": "Centro de Castración y Control Poblacional de Fauna Urbana",
+    "tipo": "administracion",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "municipio-en-tu-barrio",
+    "nombre": "Municipio en Tu Barrio",
+    "tipo": "direccion",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "articulacion-sanitaria",
+    "nombre": "Articulación Sanitaria",
+    "tipo": "administracion",
+    "padre": "municipio-en-tu-barrio",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-vecinal",
+    "nombre": "Gestión Vecinal",
+    "tipo": "administracion",
+    "padre": "municipio-en-tu-barrio",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "planificacion-de-salud",
+    "nombre": "Planificación de Salud",
+    "tipo": "direccion_general",
+    "padre": "salud",
+    "mision": "",
+    "funciones": []
+  },
+
+  {
+    "id": "turismo-y-desarrollo-economico",
+    "nombre": "Turismo y Desarrollo Económico",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "administracion-general-turismo",
+    "nombre": "Administración General",
+    "tipo": "administracion",
+    "padre": "turismo-y-desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "turismo",
+    "nombre": "Turismo",
+    "tipo": "direccion_general",
+    "padre": "turismo-y-desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "productos-turisticos",
+    "nombre": "Productos Turísticos",
+    "tipo": "administracion",
+    "padre": "turismo",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "promocion-turistica",
+    "nombre": "Promoción Turística",
+    "tipo": "administracion",
+    "padre": "turismo",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "desarrollo-economico",
+    "nombre": "Desarrollo Económico",
+    "tipo": "direccion_general",
+    "padre": "turismo-y-desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "centro-de-asistencia-y-desarrollo-empresario",
+    "nombre": "Centro de Asistencia y Desarrollo Empresario",
+    "tipo": "administracion",
+    "padre": "desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "oficina-de-empleo",
+    "nombre": "Oficina de Empleo",
+    "tipo": "administracion",
+    "padre": "desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "laboratorio-de-datos-economicos",
+    "nombre": "Laboratorio de Datos Económicos",
+    "tipo": "administracion",
+    "padre": "desarrollo-economico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "educacion-y-cultura",
+    "nombre": "Educación y Cultura",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "planeamiento-e-innovacion-educativa",
+    "nombre": "Planeamiento e Innovación Educativa",
+    "tipo": "administracion",
+    "padre": "educacion-y-cultura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "educacion",
+    "nombre": "Educación",
+    "tipo": "direccion_general",
+    "padre": "educacion-y-cultura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "politica-social-educativa",
+    "nombre": "Política Social Educativa",
+    "tipo": "direccion",
+    "padre": "educacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "escuelas",
+    "nombre": "Escuelas",
+    "tipo": "administracion",
+    "padre": "educacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "cultura",
+    "nombre": "Cultura",
+    "tipo": "direccion_general",
+    "padre": "educacion-y-cultura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "politicas-socio-culturales",
+    "nombre": "Políticas Socio Culturales",
+    "tipo": "administracion",
+    "padre": "cultura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-cultural",
+    "nombre": "Gestión Cultural",
+    "tipo": "administracion",
+    "padre": "cultura",
+    "mision": "",
+    "funciones": []
+  },
+
+  {
+    "id": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "nombre": "Secretaría de las Mujeres, Géneros y Diversidad",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "abordaje-integral-de-violencias-de-genero",
+    "nombre": "Abordaje Integral de Violencias de Género",
+    "tipo": "direccion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "programa-casa-de-acogida-refugio",
+    "nombre": "Programa Casa de Acogida (Refugio)",
+    "tipo": "administracion",
+    "padre": "abordaje-integral-de-violencias-de-genero",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "formacion-investigacion-y-politicas-culturales",
+    "nombre": "Formación, Investigación y Políticas Culturales",
+    "tipo": "direccion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "abordaje-territorial-en-politicas-de-genero-y-diversidad",
+    "nombre": "Abordaje Territorial en Políticas de Género y Diversidad",
+    "tipo": "direccion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-institucional-mujeres",
+    "nombre": "Gestión Institucional",
+    "tipo": "administracion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "atencion-primaria-e-integral-a-ninos-ninas-y-adolescentes",
+    "nombre": "Atención Primaria e Integral a Niños, Niñas y Adolescentes",
+    "tipo": "administracion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "servicio-local-de-proteccion-de-derechos-de-ninos-ninas-y-adolescentes",
+    "nombre": "Servicio Local de Protección de Derechos de Niños, Niñas y Adolescentes",
+    "tipo": "administracion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "promocion-de-derechos",
+    "nombre": "Promoción de Derechos",
+    "tipo": "administracion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "estadisticas-en-genero-y-diversidad",
+    "nombre": "Estadísticas en Género y Diversidad",
+    "tipo": "administracion",
+    "padre": "secretaria-de-las-mujeres-generos-y-diversidad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "proteccion-ciudadana-secretaria",
+    "nombre": "Protección Ciudadana",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "proteccion-ciudadana-subsecretaria",
+    "nombre": "Protección Ciudadana",
+    "tipo": "subsecretaria",
+    "padre": "proteccion-ciudadana-secretaria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "centro-de-emision-de-licencias",
+    "nombre": "Centro de Emisión de Licencias",
+    "tipo": "direccion",
+    "padre": "proteccion-ciudadana-subsecretaria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "inspeccion",
+    "nombre": "Inspección",
+    "tipo": "direccion_general",
+    "padre": "proteccion-ciudadana-subsecretaria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "inspeccion-de-comercios",
+    "nombre": "Inspección de Comercios",
+    "tipo": "administracion",
+    "padre": "inspeccion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "fiscalizacion-de-espectaculos-publicos",
+    "nombre": "Fiscalización de Espectáculos Públicos",
+    "tipo": "administracion",
+    "padre": "inspeccion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "bromatologia",
+    "nombre": "Bromatología",
+    "tipo": "administracion",
+    "padre": "inspeccion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "habilitacion-comercial",
+    "nombre": "Habilitación Comercial",
+    "tipo": "administracion",
+    "padre": "inspeccion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "transito",
+    "nombre": "Tránsito",
+    "tipo": "direccion",
+    "padre": "proteccion-ciudadana-subsecretaria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "prevencion-y-fiscalizacion-vehicular",
+    "nombre": "Prevención y Fiscalización Vehicular",
+    "tipo": "administracion",
+    "padre": "transito",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "transporte-publico-y-movilidad",
+    "nombre": "Transporte Público y Movilidad",
+    "tipo": "administracion",
+    "padre": "transito",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "corralon-municipal",
+    "nombre": "Corralón Municipal",
+    "tipo": "administracion",
+    "padre": "transito",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "seguridad",
+    "nombre": "Seguridad",
+    "tipo": "direccion",
+    "padre": "proteccion-ciudadana-subsecretaria",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "control-urbano",
+    "nombre": "Control Urbano",
+    "tipo": "administracion",
+    "padre": "seguridad",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "mercado-de-abasto",
+    "nombre": "Mercado de Abasto",
+    "tipo": "administracion",
+    "padre": "proteccion-ciudadana-subsecretaria",
+    "mision": "",
+    "funciones": []
+  },
+
+  {
+    "id": "urbanismo-e-infraestructura",
+    "nombre": "Urbanismo e Infraestructura",
+    "tipo": "secretaria",
+    "padre": "intendencia",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "infraestructura",
+    "nombre": "Infraestructura",
+    "tipo": "direccion_general",
+    "padre": "urbanismo-e-infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "hormigon",
+    "nombre": "Hormigón",
+    "tipo": "administracion",
+    "padre": "infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "pavimento",
+    "nombre": "Pavimento",
+    "tipo": "administracion",
+    "padre": "infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "red-de-agua",
+    "nombre": "Red de Agua",
+    "tipo": "administracion",
+    "padre": "infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "obras-publicas",
+    "nombre": "Obras Públicas",
+    "tipo": "direccion_general",
+    "padre": "urbanismo-e-infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "planeamiento-urbano",
+    "nombre": "Planeamiento Urbano",
+    "tipo": "direccion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "formulacion-y-seguimiento-de-proyectos",
+    "nombre": "Formulación y Seguimiento de Proyectos",
+    "tipo": "direccion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "proyectos-especiales",
+    "nombre": "Proyectos Especiales",
+    "tipo": "administracion",
+    "padre": "formulacion-y-seguimiento-de-proyectos",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "parque-automotor-urbanismo",
+    "nombre": "Parque Automotor",
+    "tipo": "direccion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "taller-urbanismo",
+    "nombre": "Taller",
+    "tipo": "administracion",
+    "padre": "parque-automotor-urbanismo",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "coordinacion-urbanismo",
+    "nombre": "Coordinación",
+    "tipo": "direccion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "edificios-publicos",
+    "nombre": "Edificios Públicos",
+    "tipo": "administracion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "espacios-publicos-obras",
+    "nombre": "Espacios Públicos",
+    "tipo": "administracion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "senalizacion",
+    "nombre": "Señalización",
+    "tipo": "administracion",
+    "padre": "obras-publicas",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "fiscalizacion-y-catastro",
+    "nombre": "Fiscalización y Catastro",
+    "tipo": "direccion_general",
+    "padre": "urbanismo-e-infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "fiscalizacion-de-obras-publicas-y-privadas",
+    "nombre": "Fiscalización de Obras Públicas y Privadas",
+    "tipo": "direccion",
+    "padre": "fiscalizacion-y-catastro",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "catastro",
+    "nombre": "Catastro",
+    "tipo": "direccion",
+    "padre": "fiscalizacion-y-catastro",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "gestion-integral-del-suelo-urbano",
+    "nombre": "Gestión Integral del Suelo Urbano",
+    "tipo": "direccion",
+    "padre": "fiscalizacion-y-catastro",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "saneamiento-de-titulos-y-regularizacion-dominial",
+    "nombre": "Saneamiento de Títulos y Regularización Dominial",
+    "tipo": "administracion",
+    "padre": "gestion-integral-del-suelo-urbano",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "produccion-de-pavimento-y-hormigon",
+    "nombre": "Producción de Pavimento y Hormigón",
+    "tipo": "direccion_general",
+    "padre": "urbanismo-e-infraestructura",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "espacios-publicos-subsecretaria",
+        "nombre": "Espacios Públicos",
+        "tipo": "subsecretaria",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "espacios-verdes-dg",
+        "nombre": "Espacios Verdes",
+        "tipo": "direccion_general",
+        "padre": "espacios-publicos-subsecretaria",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "poda-extraccion-y-arbolado-urbano",
+        "nombre": "Poda, Extracción y Arbolado Urbano",
+        "tipo": "administracion",
+        "padre": "espacios-verdes-dg",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "espacios-verdes-adm",
+        "nombre": "Espacios Verdes",
+        "tipo": "administracion",
+        "padre": "espacios-verdes-dg",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "mantenimiento-de-espacios-publicos",
+        "nombre": "Mantenimiento de Espacios Públicos",
+        "tipo": "administracion",
+        "padre": "espacios-verdes-dg",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "urgencias-y-reclamos-ciudadanos",
+        "nombre": "Urgencias y Reclamos Ciudadanos",
+        "tipo": "direccion_general",
+        "padre": "espacios-publicos-subsecretaria",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "desagues-y-pluviales",
+        "nombre": "Desagües y Pluviales",
+        "tipo": "administracion",
+        "padre": "urgencias-y-reclamos-ciudadanos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "espacios-turisticos-y-parques",
+        "nombre": "Espacios Turísticos y Parques",
+        "tipo": "direccion",
+        "padre": "espacios-publicos-subsecretaria",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "gestion-ambiental",
+        "nombre": "Gestión Ambiental",
+        "tipo": "direccion_general",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "forestacion",
+        "nombre": "Forestación",
+        "tipo": "administracion",
+        "padre": "gestion-ambiental",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "planificacion-ambiental",
+        "nombre": "Planificación Ambiental",
+        "tipo": "administracion",
+        "padre": "gestion-ambiental",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "reciclaje-y-economia-circular",
+        "nombre": "Reciclaje y Economía Circular",
+        "tipo": "direccion",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "economia-circular-adm",
+        "nombre": "Economía Circular",
+        "tipo": "administracion",
+        "padre": "reciclaje-y-economia-circular",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "produccion-de-vivero-y-huerta-ecologica",
+        "nombre": "Producción de Vivero y Huerta Ecológica",
+        "tipo": "direccion",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "vivero",
+        "nombre": "Vivero",
+        "tipo": "administracion",
+        "padre": "produccion-de-vivero-y-huerta-ecologica",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "ecopredio",
+        "nombre": "Ecopredio",
+        "tipo": "administracion",
+        "padre": "produccion-de-vivero-y-huerta-ecologica",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "proteccion-y-control-ambiental",
+        "nombre": "Protección y Control Ambiental",
+        "tipo": "direccion",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "policia-ambiental",
+        "nombre": "Policía",
+        "tipo": "administracion",
+        "padre": "proteccion-y-control-ambiental",
+        "mision": "",
+        "funciones": []
+    },
+    {
+        "id": "movilidad-urbana-sustentable",
+        "nombre": "Movilidad Urbana Sustentable",
+        "tipo": "direccion",
+        "padre": "ambiente-y-espacios-publicos",
+        "mision": "",
+        "funciones": []
+    }
+]

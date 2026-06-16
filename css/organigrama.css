@@ -1,0 +1,377 @@
+/* ==========================================
+   ORGANIGRAMA.CSS
+   Árbol jerárquico y vista gráfica
+========================================== */
+
+/* ==========================================
+   ÁRBOL JERÁRQUICO
+========================================== */
+
+.organigrama-arbol {
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.organigrama-arbol ul {
+    list-style: none;
+    margin-left: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.organigrama-arbol ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2px;
+    height: 100%;
+
+    background-color: #D6DDE5;
+}
+
+.organigrama-arbol li {
+    position: relative;
+    margin: 10px 0;
+}
+
+.organigrama-arbol li::before {
+    content: "";
+    position: absolute;
+
+    top: 22px;
+    left: -25px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #D6DDE5;
+}
+
+/* Remove la línea del nodo raíz */
+
+.organigrama-arbol > ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.organigrama-arbol > ul::before {
+    display: none;
+}
+
+.organigrama-arbol > ul > li::before {
+    display: none;
+}
+
+/* ==========================================
+   NODOS
+========================================== */
+
+.nodo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #D9DEE5;
+    border-radius: 10px;
+
+    padding: 10px 15px;
+
+    min-height: 48px;
+
+    cursor: pointer;
+
+    transition: all 0.20s ease;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.nodo:hover {
+    transform: translateY(-2px);
+
+    border-color: #0B4F8A;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+}
+
+.nodo.seleccionado {
+    background-color: #0B4F8A;
+    color: #FFFFFF;
+
+    border-color: #0B4F8A;
+}
+
+.nodo i {
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.texto-nodo {
+    line-height: 1.4;
+}
+
+/* ==========================================
+   TOGGLE
+========================================== */
+
+.toggle {
+    width: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    color: #0B4F8A;
+}
+
+.nodo.seleccionado .toggle {
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   TIPOS DE NODOS
+========================================== */
+
+.nodo[data-tipo="secretaria"] {
+    border-left: 5px solid #0B4F8A;
+}
+
+.nodo[data-tipo="subsecretaria"] {
+    border-left: 5px solid #2F7CC0;
+}
+
+.nodo[data-tipo="direccion_general"] {
+    border-left: 5px solid #4CAF50;
+}
+
+.nodo[data-tipo="direccion"] {
+    border-left: 5px solid #FF9800;
+}
+
+.nodo[data-tipo="administracion"] {
+    border-left: 5px solid #9C27B0;
+}
+
+.nodo[data-tipo="departamento"] {
+    border-left: 5px solid #607D8B;
+}
+
+/* ==========================================
+   MENSAJE DE ERROR
+========================================== */
+
+.mensaje-error {
+    text-align: center;
+
+    padding: 40px;
+
+    color: #D32F2F;
+}
+
+.mensaje-error h3 {
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   VISTA GRÁFICA
+========================================== */
+
+.organigrama-grafico {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.grafico-nodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    margin: 20px;
+}
+
+.grafico-card {
+    min-width: 240px;
+    max-width: 280px;
+
+    padding: 15px;
+
+    background-color: #FFFFFF;
+
+    border: 2px solid #0B4F8A;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+
+    transition: all .20s ease;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,.10);
+}
+
+.grafico-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+.grafico-card i {
+    color: #0B4F8A;
+    font-size: 22px;
+}
+
+.grafico-card span {
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.grafico-card.seleccionado {
+    background-color: #0B4F8A;
+    color: #FFFFFF;
+}
+
+.grafico-card.seleccionado i {
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   HIJOS VISTA GRÁFICA
+========================================== */
+
+.grafico-hijos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.grafico-hijos::before {
+    content: "";
+
+    position: absolute;
+
+    top: -25px;
+    left: 50%;
+
+    width: 2px;
+    height: 25px;
+
+    transform: translateX(-50%);
+
+    background-color: #C9D3DE;
+}
+
+.grafico-hijos > .grafico-nodo::before {
+    content: "";
+
+    position: absolute;
+
+    top: -25px;
+    left: 50%;
+
+    width: 2px;
+    height: 25px;
+
+    transform: translateX(-50%);
+
+    background-color: #C9D3DE;
+}
+
+/* ==========================================
+   SCROLL PERSONALIZADO
+========================================== */
+
+.organigrama-arbol::-webkit-scrollbar,
+.organigrama-grafico::-webkit-scrollbar {
+    height: 10px;
+}
+
+.organigrama-arbol::-webkit-scrollbar-track,
+.organigrama-grafico::-webkit-scrollbar-track {
+    background-color: #F1F3F5;
+}
+
+.organigrama-arbol::-webkit-scrollbar-thumb,
+.organigrama-grafico::-webkit-scrollbar-thumb {
+    background-color: #B0BEC5;
+    border-radius: 10px;
+}
+
+.organigrama-arbol::-webkit-scrollbar-thumb:hover,
+.organigrama-grafico::-webkit-scrollbar-thumb:hover {
+    background-color: #90A4AE;
+}
+
+/* ==========================================
+   ANIMACIONES
+========================================== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.organigrama-arbol li,
+.grafico-nodo {
+    animation: aparecer .25s ease;
+}
+
+/* ==========================================
+   NODO RAÍZ
+========================================== */
+
+.arbol-principal > li > .nodo {
+    font-weight: 700;
+
+    border: 2px solid #0B4F8A;
+
+    background-color: #F7FAFD;
+}
+
+/* ==========================================
+   IMPRESIÓN
+========================================== */
+
+@media print {
+
+    .organigrama-arbol,
+    .organigrama-grafico {
+
+        overflow: visible;
+
+    }
+
+    .nodo,
+    .grafico-card {
+
+        box-shadow: none;
+
+    }
+
+}

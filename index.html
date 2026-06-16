@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Organizacional Interactivo 2026</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/organigrama.css">
+    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/imprimir.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <link rel="icon" href="img/escudo-catamarca.png">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <button class="btn-menu" id="btnMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="header-logo">
+            <img src="img/logo-municipalidad.png"
+                alt="Municipalidad de San Fernando del Valle de Catamarca">
+        </div>
+
+        <div class="header-info">
+
+            <h1>Atlas Organizacional Interactivo</h1>
+
+            <h2>
+                Municipalidad de San Fernando del Valle de Catamarca
+            </h2>
+
+            <span>
+                Estructura Orgánica Municipal 2026
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+
+                <h3>
+                    <i class="fa-solid fa-building-columns"></i>
+                    Secretarías
+                </h3>
+
+            </div>
+
+            <!-- BUSCADOR -->
+            <div class="buscador-container">
+
+                <input type="text"
+                    id="buscador"
+                    placeholder="Buscar dependencia..."
+                    autocomplete="off">
+
+                <button id="btnBuscar">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- LISTADO DINÁMICO -->
+            <ul id="listaSecretarias"
+                class="lista-secretarias">
+
+            </ul>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+        <main class="contenido">
+
+            <!-- TOOLBAR -->
+            <section class="toolbar">
+
+                <button id="btnExpandirTodo">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Expandir Todo
+
+                </button>
+
+                <button id="btnContraerTodo">
+
+                    <i class="fa-solid fa-minus"></i>
+
+                    Contraer Todo
+
+                </button>
+
+                <button id="btnVistaArbol"
+                    class="vista-activa">
+
+                    <i class="fa-solid fa-sitemap"></i>
+
+                    Vista Árbol
+
+                </button>
+
+                <button id="btnVistaGrafica">
+
+                    <i class="fa-solid fa-diagram-project"></i>
+
+                    Vista Organigrama
+
+                </button>
+
+                <button id="btnExportarPDF">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    Exportar PDF
+
+                </button>
+
+                <button id="btnImprimir">
+
+                    <i class="fa-solid fa-print"></i>
+
+                    Imprimir
+
+                </button>
+
+            </section>
+
+
+            <!-- ORGANIGRAMA -->
+            <section class="organigrama-container">
+
+                <!-- MENSAJE INICIAL -->
+                <div id="mensajeInicial"
+                    class="mensaje-inicial">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    <h2>
+                        Bienvenido al Atlas Organizacional
+                    </h2>
+
+                    <p>
+                        Seleccione una Secretaría desde el menú lateral
+                        o utilice el buscador para explorar la estructura
+                        orgánica municipal.
+                    </p>
+
+                </div>
+
+
+                <!-- VISTA ÁRBOL -->
+                <div id="organigramaArbol"
+                    class="organigrama-arbol">
+
+                </div>
+
+
+                <!-- VISTA GRÁFICA -->
+                <div id="organigramaGrafico"
+                    class="organigrama-grafico oculto">
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- PANEL DE INFORMACIÓN -->
+        <aside class="panel-info">
+
+            <div class="panel-header">
+
+                <h3>
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    Información Institucional
+
+                </h3>
+
+            </div>
+
+            <div id="detalleDependencia">
+
+                <div class="detalle-vacio">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <p>
+                        Seleccione una dependencia para visualizar:
+                    </p>
+
+                    <ul>
+
+                        <li>Responsable</li>
+
+                        <li>Misión</li>
+
+                        <li>Funciones</li>
+
+                        <li>Datos de contacto</li>
+
+                        <li>Dependencia superior</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="btn-top"
+        id="btnTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+
+            · Municipalidad de San Fernando del Valle de Catamarca ·
+
+        </div>
+
+        <div>
+
+            Atlas Organizacional Interactivo · © 2026 Dirección General de Programas de Inclusión · Todos Los Derechos Reservados
+
+        </div>
+
+    </footer>
+
+
+    <!-- OVERLAY -->
+    <div class="modal-overlay"
+        id="modalOverlay">
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/config.js"></script>
+
+    <script src="js/utilidades.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/organigrama.js"></script>
+
+    <script src="js/buscador.js"></script>
+
+    <script src="js/panel.js"></script>
+
+    <script src="js/exportar.js"></script>
+
+    <script src="js/imprimir.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>

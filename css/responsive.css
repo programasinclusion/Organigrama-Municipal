@@ -1,0 +1,380 @@
+/* ==========================================
+   RESPONSIVE.CSS
+   Adaptación para distintos dispositivos
+========================================== */
+
+/* ==========================================
+   DESKTOP GRANDE
+   (Más de 1400px)
+========================================== */
+
+@media screen and (min-width: 1401px) {
+
+    .contenedor {
+        grid-template-columns: 300px 1fr 350px;
+    }
+
+}
+
+/* ==========================================
+   NOTEBOOKS Y DESKTOP
+   (1025px - 1400px)
+========================================== */
+
+@media screen and (max-width: 1400px) {
+
+    .sidebar {
+        width: 280px;
+    }
+
+    .panel-info {
+        min-width: 320px;
+        max-width: 320px;
+    }
+
+    .grafico-card {
+        min-width: 220px;
+    }
+
+}
+
+/* ==========================================
+   TABLETS
+   (768px - 1024px)
+========================================== */
+
+@media screen and (max-width: 1024px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .header-logo img {
+        width: 55px;
+    }
+
+    .header-info h1 {
+        font-size: 22px;
+    }
+
+    .header-info h2 {
+        font-size: 14px;
+    }
+
+    .header-info span {
+        font-size: 12px;
+    }
+
+    /* CONTENEDOR */
+
+    .contenedor {
+        display: block;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar {
+        position: fixed;
+
+        top: 0;
+        left: -320px;
+
+        width: 320px;
+        height: 100vh;
+
+        z-index: 1000;
+
+        transition: left .30s ease;
+    }
+
+    .sidebar.abierto {
+        left: 0;
+    }
+
+    .modal-overlay.activo {
+        display: block;
+
+        position: fixed;
+        inset: 0;
+
+        background: rgba(0,0,0,.4);
+
+        z-index: 999;
+    }
+
+    /* PANEL */
+
+    .panel-info {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+
+        border-left: none;
+        border-top: 1px solid #D9DEE5;
+    }
+
+    /* TOOLBAR */
+
+    .toolbar {
+        gap: 8px;
+    }
+
+    .toolbar button {
+        flex: 1 1 calc(50% - 8px);
+
+        justify-content: center;
+    }
+
+    /* ORGANIGRAMA */
+
+    .organigrama-container {
+        min-height: auto;
+    }
+
+    .grafico-hijos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grafico-card {
+        min-width: 260px;
+    }
+
+}
+
+/* ==========================================
+   CELULARES
+   (Hasta 767px)
+========================================== */
+
+@media screen and (max-width: 767px) {
+
+    /* HEADER */
+
+    .header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header-info {
+        width: 100%;
+    }
+
+    .header-info h1 {
+        font-size: 20px;
+    }
+
+    .header-info h2 {
+        font-size: 13px;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+
+    .sidebar.abierto {
+        left: 0;
+    }
+
+    /* CONTENIDO */
+
+    .contenido {
+        padding: 10px;
+    }
+
+    /* TOOLBAR */
+
+    .toolbar {
+        flex-direction: column;
+    }
+
+    .toolbar button {
+        width: 100%;
+    }
+
+    /* MENSAJE INICIAL */
+
+    .mensaje-inicial {
+        padding: 40px 15px;
+    }
+
+    .mensaje-inicial i {
+        font-size: 45px;
+    }
+
+    .mensaje-inicial h2 {
+        font-size: 22px;
+    }
+
+    .mensaje-inicial p {
+        font-size: 14px;
+    }
+
+    /* ÁRBOL */
+
+    .organigrama-arbol ul {
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    .nodo {
+        width: 100%;
+
+        padding: 10px;
+
+        font-size: 14px;
+    }
+
+    .texto-nodo {
+        flex: 1;
+    }
+
+    /* VISTA GRÁFICA */
+
+    .grafico-card {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .grafico-card span {
+        font-size: 14px;
+    }
+
+    /* PANEL */
+
+    .panel-header {
+        padding: 15px;
+    }
+
+    .detalle-top img,
+    .detalle-top .sin-foto {
+        width: 90px;
+        height: 90px;
+    }
+
+    .detalle-top h2 {
+        font-size: 18px;
+    }
+
+    .detalle-seccion {
+        padding: 15px;
+    }
+
+    .detalle-seccion h3 {
+        font-size: 15px;
+    }
+
+    .detalle-seccion p,
+    .lista-funciones li,
+    .contacto-item span,
+    .contacto-item a {
+        font-size: 14px;
+    }
+
+    /* BOTÓN TOP */
+
+    .btn-top {
+        width: 45px;
+        height: 45px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+   (Hasta 480px)
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    .header-info h1 {
+        font-size: 18px;
+    }
+
+    .header-info h2 {
+        font-size: 12px;
+    }
+
+    .header-info span {
+        font-size: 11px;
+    }
+
+    .buscador-container {
+        flex-direction: column;
+    }
+
+    .buscador-container button {
+        width: 100%;
+        height: 45px;
+    }
+
+    .lista-secretarias li {
+        font-size: 14px;
+    }
+
+    .grafico-card {
+        padding: 12px;
+    }
+
+    .grafico-card i {
+        font-size: 18px;
+    }
+
+    .detalle-top h2 {
+        font-size: 16px;
+    }
+
+    .detalle-top h4 {
+        font-size: 14px;
+    }
+
+}
+
+/* ==========================================
+   ORIENTACIÓN HORIZONTAL
+========================================== */
+
+@media screen and (max-height: 500px) {
+
+    .sidebar,
+    .panel-info {
+        overflow-y: auto;
+    }
+
+    .mensaje-inicial {
+        padding: 20px;
+    }
+
+}
+
+/* ==========================================
+   ACCESIBILIDAD
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+
+    }
+
+}
