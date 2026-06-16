@@ -93,20 +93,7 @@ function crearNodoArbol(item) {
 
         mostrarDetalle(item.id);
 
-        document
-            .querySelectorAll(".nodo")
-            .forEach(n => {
-
-                n.classList.remove(
-                    "seleccionado"
-                );
-
-            });
-
-        nodo.classList.add(
-            "seleccionado"
-        );
-
+        resaltarNodo(item.id);
     });
 
     li.appendChild(nodo);
