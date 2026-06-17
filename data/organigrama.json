@@ -2,9 +2,9 @@
   {
     "id": "intendencia",
     "nombre": "Intendencia",
-    "tipo": "intendencia",
+    "tipo": "secretaria",
     "padre": null,
-    "mision": "",
+    "mision": "Asistir directamente al titular del municipio, defender el patrimonio municipal, velar por la legalidad de los actos administrativos y gestionar la difusión oficial.",
     "funciones": []
   },
   {
@@ -26,7 +26,7 @@
   {
     "id": "secretaria-privada",
     "nombre": "Secretaría Privada",
-    "tipo": "secretaria",
+    "tipo": "direccion_general",
     "padre": "intendencia",
     "mision": "",
     "funciones": []
@@ -42,7 +42,7 @@
   {
     "id": "fiscalia-municipal",
     "nombre": "Fiscalía Municipal",
-    "tipo": "secretaria",
+    "tipo": "direccion_general",
     "padre": "intendencia",
     "mision": "",
     "funciones": []
@@ -75,8 +75,8 @@
     "id": "secretaria-gobierno-coordinacion",
     "nombre": "Secretaría de Gobierno y Coordinación",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Optimizar el funcionamiento interno del Ejecutivo y promover la participación activa de los ciudadanos a través de la desconcentración de la gestión y el fomento del deporte.",
     "funciones": []
   },
   {
@@ -209,10 +209,10 @@
   },
   {
     "id": "gabinete-y-modernizacion",
-    "nombre": "Gabinete y Modernización",
+    "nombre": "Secretaría de Gabinete y Modernización",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Liderar la transformación organizacional, promoviendo la modernización de los procesos internos, la innovación tecnológica y la comunicación estratégica del gobierno.",
     "funciones": []
   },
   {
@@ -394,10 +394,10 @@
 
   {
     "id": "hacienda",
-    "nombre": "Hacienda",
+    "nombre": "Secretaría de Hacienda",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Garantizar la gestión económico-financiera eficiente, transparente y equitativa del Municipio, asegurando la correcta recaudación y asignación de recursos.",
     "funciones": []
   },
   {
@@ -522,10 +522,10 @@
   },
   {
     "id": "salud",
-    "nombre": "Salud",
+    "nombre": "Secretaría de Salud",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Proveer servicios integrales de salud basados en la Atención Primaria, enfocados en la prevención, la persona, la família y la comunidad.",
     "funciones": []
   },
   {
@@ -611,10 +611,10 @@
 
   {
     "id": "turismo-y-desarrollo-economico",
-    "nombre": "Turismo y Desarrollo Económico",
+    "nombre": "Secretaría de Turismo y Desarrollo Económico",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Posicionar a la ciudad como un destino turístico consolidado y dinamizar la economía local apoyando a PyMEs y emprendedores.",
     "funciones": []
   },
   {
@@ -683,10 +683,10 @@
   },
   {
     "id": "educacion-y-cultura",
-    "nombre": "Educación y Cultura",
+    "nombre": "Secretaría de Educación y Cultura",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Garantizar el acceso a la educación integral y preservar el patrimonio cultural, fomentando la innovación pedagógica y las expresiones artísticas.",
     "funciones": []
   },
   {
@@ -750,8 +750,8 @@
     "id": "secretaria-de-las-mujeres-generos-y-diversidad",
     "nombre": "Secretaría de las Mujeres, Géneros y Diversidad",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Erradicar las violencias por razones de género y promover la igualdad de derechos a través de un abordaje integral, territorial e interdisciplinario.",
     "funciones": []
   },
   {
@@ -828,10 +828,10 @@
   },
   {
     "id": "proteccion-ciudadana-secretaria",
-    "nombre": "Protección Ciudadana",
+    "nombre": "Secretaría de Protección Ciudadana",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Garantizar el orden urbano, la seguridad vial y el cumplimiento de las normativas comerciales e higiénicas para una convivencia ciudadana pacífica.",
     "funciones": []
   },
   {
@@ -949,10 +949,10 @@
 
   {
     "id": "urbanismo-e-infraestructura",
-    "nombre": "Urbanismo e Infraestructura",
+    "nombre": "Secretaría de Urbanismo e Infraestructura",
     "tipo": "secretaria",
-    "padre": "intendencia",
-    "mision": "",
+    "padre": null,
+    "mision": "Planificar el desarrollo territorial sostenible y ejecutar las obras públicas fundamentales que configuran el tejido urbano de la ciudad.",
     "funciones": []
   },
   {
@@ -1260,11 +1260,35 @@
         "funciones": []
     },
     {
-        "id": "movilidad-urbana-sustentable",
-        "nombre": "Movilidad Urbana Sustentable",
-        "tipo": "direccion",
-        "padre": "ambiente-y-espacios-publicos",
-        "mision": "",
-        "funciones": []
-    }
+    "id": "servicios-ciudadanos",
+    "nombre": "Secretaría de Servicios Ciudadanos",
+    "tipo": "secretaria",
+    "padre": null,
+    "mision": "Mantener la operatividad diaria de la ciudad mediante la higiene urbana, el alumbrado público y la gestión eficiente de los servicios fúnebres.",
+    "funciones": []
+  },
+  {
+    "id": "higiene-urbana-y-alumbrado-publico",
+    "nombre": "Higiene Urbana y Alumbrado Público",
+    "tipo": "subsecretaria",
+    "padre": "servicios-ciudadanos",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "ambiente-y-espacios-publicos",
+    "nombre": "Secretaría de Abiente y Espacios Públicos",
+    "tipo": "secretaria",
+    "padre": null,
+    "mision": "Preservar el entorno natural de la ciudad, gestionar los espacios verdes e impulsar un modelo de economía circular y movilidad sustentable.",
+    "funciones": []
+  },
+  {
+    "id": "movilidad-urbana-sustentable",
+    "nombre": "Movilidad Urbana Sustentable",
+    "tipo": "direccion",
+    "padre": "ambiente-y-espacios-publicos",
+    "mision": "",
+    "funciones": []
+  }
 ]

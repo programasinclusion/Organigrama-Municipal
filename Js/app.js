@@ -345,12 +345,12 @@ function registrarEventos() {
 
 
     /* Exportar */
-
+    /*
     btnExportarPDF.addEventListener(
         "click",
         exportarPDF
     );
-
+    */
     btnImprimir.addEventListener(
         "click",
         imprimirOrganigrama
