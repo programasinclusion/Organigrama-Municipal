@@ -67,7 +67,7 @@
     "id": "escribania-municipal",
     "nombre": "Escribanía Municipal",
     "tipo": "direccion",
-    "padre": "intendencia",
+    "padre": "fiscalia-municipal",
     "mision": "",
     "funciones": []
   },
@@ -75,7 +75,7 @@
     "id": "secretaria-gobierno-coordinacion",
     "nombre": "Secretaría de Gobierno y Coordinación",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Optimizar el funcionamiento interno del Ejecutivo y promover la participación activa de los ciudadanos a través de la desconcentración de la gestión y el fomento del deporte.",
     "funciones": []
   },
@@ -211,7 +211,7 @@
     "id": "gabinete-y-modernizacion",
     "nombre": "Secretaría de Gabinete y Modernización",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Liderar la transformación organizacional, promoviendo la modernización de los procesos internos, la innovación tecnológica y la comunicación estratégica del gobierno.",
     "funciones": []
   },
@@ -396,7 +396,7 @@
     "id": "hacienda",
     "nombre": "Secretaría de Hacienda",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Garantizar la gestión económico-financiera eficiente, transparente y equitativa del Municipio, asegurando la correcta recaudación y asignación de recursos.",
     "funciones": []
   },
@@ -524,7 +524,7 @@
     "id": "salud",
     "nombre": "Secretaría de Salud",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Proveer servicios integrales de salud basados en la Atención Primaria, enfocados en la prevención, la persona, la família y la comunidad.",
     "funciones": []
   },
@@ -613,7 +613,7 @@
     "id": "turismo-y-desarrollo-economico",
     "nombre": "Secretaría de Turismo y Desarrollo Económico",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Posicionar a la ciudad como un destino turístico consolidado y dinamizar la economía local apoyando a PyMEs y emprendedores.",
     "funciones": []
   },
@@ -685,7 +685,7 @@
     "id": "educacion-y-cultura",
     "nombre": "Secretaría de Educación y Cultura",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Garantizar el acceso a la educación integral y preservar el patrimonio cultural, fomentando la innovación pedagógica y las expresiones artísticas.",
     "funciones": []
   },
@@ -750,7 +750,7 @@
     "id": "secretaria-de-las-mujeres-generos-y-diversidad",
     "nombre": "Secretaría de las Mujeres, Géneros y Diversidad",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Erradicar las violencias por razones de género y promover la igualdad de derechos a través de un abordaje integral, territorial e interdisciplinario.",
     "funciones": []
   },
@@ -830,7 +830,7 @@
     "id": "proteccion-ciudadana-secretaria",
     "nombre": "Secretaría de Protección Ciudadana",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Garantizar el orden urbano, la seguridad vial y el cumplimiento de las normativas comerciales e higiénicas para una convivencia ciudadana pacífica.",
     "funciones": []
   },
@@ -951,7 +951,7 @@
     "id": "urbanismo-e-infraestructura",
     "nombre": "Secretaría de Urbanismo e Infraestructura",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Planificar el desarrollo territorial sostenible y ejecutar las obras públicas fundamentales que configuran el tejido urbano de la ciudad.",
     "funciones": []
   },
@@ -1263,7 +1263,7 @@
     "id": "servicios-ciudadanos",
     "nombre": "Secretaría de Servicios Ciudadanos",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Mantener la operatividad diaria de la ciudad mediante la higiene urbana, el alumbrado público y la gestión eficiente de los servicios fúnebres.",
     "funciones": []
   },
@@ -1279,15 +1279,135 @@
     "id": "ambiente-y-espacios-publicos",
     "nombre": "Secretaría de Abiente y Espacios Públicos",
     "tipo": "secretaria",
-    "padre": null,
+    "padre": "intendencia",
     "mision": "Preservar el entorno natural de la ciudad, gestionar los espacios verdes e impulsar un modelo de economía circular y movilidad sustentable.",
     "funciones": []
   },
   {
-    "id": "movilidad-urbana-sustentable",
-    "nombre": "Movilidad Urbana Sustentable",
+    "id": "control-suministro-combustible",
+    "nombre": "Control y Suministro de Combustible",
+    "tipo": "subsecretaria",
+    "padre": "servicios-ciudadanos",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "cementerios",
+    "nombre": "Cementerios",
+    "tipo": "subsecretaria",
+    "padre": "servicios-ciudadanos",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "alumbrado-publico",
+    "nombre": "Alumbrado Público",
+    "tipo": "direccion_general",
+    "padre": "higiene-urbana-y-alumbrado-publico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "parque-automotor-maquinarias",
+    "nombre": "Parque Automotor y Maquinarias",
+    "tipo": "direccion_general",
+    "padre": "control-suministro-combustible",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "saneamiento-ambiental",
+    "nombre": "Saneamiento Ambiental",
     "tipo": "direccion",
-    "padre": "ambiente-y-espacios-publicos",
+    "padre": "higiene-urbana-y-alumbrado-publico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "barrido",
+    "nombre": "Barrido y Limpieza",
+    "tipo": "direccion",
+    "padre": "higiene-urbana-y-alumbrado-publico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "recoleccion",
+    "nombre": "Recolección de Residuos",
+    "tipo": "direccion",
+    "padre": "higiene-urbana-y-alumbrado-publico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "semaforizacion",
+    "nombre": "Semaforización",
+    "tipo": "direccion",
+    "padre": "alumbrado-publico",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "planificacion-logistica",
+    "nombre": "Planificación y Logística",
+    "tipo": "direccion",
+    "padre": "parque-automotor-maquinarias",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "erradicacion-basuarales",
+    "nombre": "Erradicación de Basurales y Volcadores",
+    "tipo": "administracion",
+    "padre": "saneamiento-ambiental",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "contenerizacion",
+    "nombre": "Contenerización",
+    "tipo": "administracion",
+    "padre": "saneamiento-ambiental",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "higiene-seguridad-laboral",
+    "nombre": "Higiene y Seguridad Laboral",
+    "tipo": "administracion",
+    "padre": "barrido",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "barrido-administracion",
+    "nombre": "Barrido y Limpieza",
+    "tipo": "administracion",
+    "padre": "recoleccion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "mantenimmiento-lineas-artefactos",
+    "nombre": "Mantenimiento de Líneas y Artefactos",
+    "tipo": "administracion",
+    "padre": "semaforizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "obras-contratos",
+    "nombre": "Obras por Administración y Contratos",
+    "tipo": "administracion",
+    "padre": "semaforizacion",
+    "mision": "",
+    "funciones": []
+  },
+  {
+    "id": "equipos-pesados",
+    "nombre": "Equipos Pesados",
+    "tipo": "administracion",
+    "padre": "planificacion-logistica",
     "mision": "",
     "funciones": []
   }
